@@ -1,0 +1,83 @@
+body {
+    background-color: lightblue;
+    font-family: 'Oswald', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+#city-input {
+    padding: 12px 16px;
+    font-size: 16px;
+    width: 220px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-left: 8px;
+    text-align: left;
+}
+
+#city-input::placeholder {
+    color: lightgrey;
+    font-style: italic;
+}
+
+#search-btn {
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    margin: 10px 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    margin: 10px 0;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #555;
+    background-color: #f0f0f0;
+}
+
+#weather-info{
+    text-align: center;
+}

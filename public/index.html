@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rest API Assignment</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <div class="glass-container">
+        <h1>Check the Weather</h1>
+        <!-- Input for city -->
+        <label for="city-input">Enter a city:</label>
+        <input type="text" id="city-input" placeholder="e.g. Toronto" />
+        <button id="search-btn">Get Weather</button>
+
+        <!-- Dropdown for day selection -->
+        <label for="day-select">Choose a day:</label>
+        <select id="day-select">
+            <option value="0">Today</option>
+            <option value="1">Tomorrow</option>
+            <option value="2">In 2 Days</option>
+            <option value="3">In 3 Days</option>
+        </select>
+
+        <!-- Weather info -->
+        <div id="weather-info">Waiting for input...</div>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
